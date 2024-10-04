@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Translator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Real-Time Translator</h1>
+        <textarea id="inputText" placeholder="Enter English text here..."></textarea>
+        <select id="languageSelect">
+            <option value="de">German</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+        </select>
+        <div id="translationOutput"></div>
+        <button id="speakButton">Speak Translation</button>
+        <div id="historyContainer">
+            <h2>Translation History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <img id="hiddenPlatypus" alt="Hidden Platypus" style="display: none;">
+    <script type="module" src="index.js"></script>
+</body>
+</html>
